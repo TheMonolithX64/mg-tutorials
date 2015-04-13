@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task extension options</title>
+		<style>
+		  body: {
+			      padding: 10px;
+			      background-color: #1A237E;
+			}
+		</style>
+	</head>
+		<body>
+		<p>Set your User Name: <br />
+		<img id="user_option_set">
+		<select id="userNameOptions">
+                <option value="Stephen Barry">Stephen Barry</option>
+                <option value="Jane Doe">Jane Doe</option>
+                <option value="John Doe">John Doe</option>
+                <option value="Paddy Irishman">Paddy Irishman</option>
+                <option value="Paddy Englishman">Paddy Englishman</option>
+                <option value="Paddy Scotsman">Paddy Scotsman</option>
+                <option value="Patricia Welshwomen">Patricia Welshwomen</option>
+                <option value="Not set">Not Set</option>
+        </select></p>
+		
+		<p>Set your Department: <br />
+		<img id="dept_option_set">
+		<select id="deptOptions">
+                <option value="Accounts">Accounts</option>
+                <option value="Business">Business</option>
+                <option value="Development">Development</option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Sales">Sales</option>
+                <option value="Support">Support</option>
+                <option value="Testing">Testing</option>
+			    <option value="Not set">Not set</option>
+        </select></p>
+		
+		<div id="options_status"></div>
+		
+		<img id="save_options_img" src="/assets/user-add.png">
+		<button id="options_save">Save options</button>
+		<img id="clear_options_img" src="/assets/user-remove.png">
+		<button id="options_clear">Clear options</button>
+		<p><img id="op-user-img" src="/assets/user-key.png">Current USER saved in storage: </p>
+		<div id="currentUSER"></div>
+		
+		<p><img id="op-dept-img" src="/assets/settings.png">Current DEPARTMENT saved in storage: </p>
+		<div id="currentDEPT"></div>
+		
+		<textarea id="options_output" rows="2" cols="50"></textarea>
+		
+		<script src="options.js"></script>
+		</body>
+</html>

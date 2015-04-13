@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Time/Task Tracker Report",
+    "description": "POST task details to remote endpoint.",
+	"author": "Stephen Barry <stephen@monolithicgames.com>",
+    "version": "0.1",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+	"icons": { "48": "icon-big.png" },
+    "permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ]
+}

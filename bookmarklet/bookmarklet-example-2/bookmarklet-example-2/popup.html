@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+            body {
+                background-color: #FF5722;
+            }
+      </style>
+  </head>
+  <body>
+    <div id="wrapper">Bookmarklet example 0.2
+        <form id="addbookmark-task">
+            <div id="user-name">
+            <select name="user-names" id="user-names">
+                <option value="Stephen Barry">Stephen Barry</option>
+                <option value="Jane Doe">Jane Doe</option>
+                <option value="John Doe">John Doe</option>
+                <option value="Paddy Irishman">Paddy Irishman</option>
+                <option value="Paddy Englishman">Paddy Englishman</option>
+                <option value="Paddy Scotsman">Paddy Scotsman</option>
+                <option value="Patricia Welshwomen">Patricia Welshwomen</option>
+                </select>
+            </div>
+            <div id="departments">
+                <select name="depts" id="depts">
+                    <option value="Accounts">Accounts</option>
+                    <option value="Business">Business</option>
+                    <option value="Development">Development</option>
+                    <option value="Public Relations">Public Relations</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Support">Support</option>
+                    <option value="Testing">Testing</option>
+                </select>
+            </div>
+        <div id="time-options">
+            <select name="time-taken" id="time-taken">
+                <option value="5">5 minutes</option>
+                <option value="10">10 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+                <option value="45">45 minutes</option>
+                <option value="60">60+ minutes</option>
+                <option value="90">90 minutes</option>
+                <option value="120">2 hours</option>
+                <option value="180">3 hours</option>
+                <option value="240">4 hours</option>
+            </select>
+        </div>
+        <div id="res-link">
+            <input type="text" id="url" name="url" value="" />
+        </div>
+        <div id="task-summary">
+            <textarea id="summary" name="summary" rows="5" cols="25"></textarea>
+        </div>
+        <div id="div-savearea">
+            <!-- Save Button. -->
+                <input id="save" type="submit" value="Save Entry" />
+            </div>   
+      </form>
+      </div>
+      <script src="background.js"></script>
+      <script src="popup.js"></script>
+  </body>
+</html>
